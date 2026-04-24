@@ -1,0 +1,126 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#quiz-container,
+#score-container {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  width: 90%;
+  max-width: 650px;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+p {
+  font-size: 1rem;
+  color: #dbeafe;
+  margin-bottom: 25px;
+}
+
+#question-container {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+#options-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.option-btn {
+  background: #ffffff;
+  color: #111827;
+  border: none;
+  padding: 14px 18px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.option-btn:hover {
+  transform: translateY(-2px);
+  background: #dbeafe;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.option-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.95;
+}
+
+.correct {
+  background: #22c55e !important;
+  color: white !important;
+}
+
+.incorrect {
+  background: #ef4444 !important;
+  color: white !important;
+}
+
+#next-button,
+#restart-button {
+  margin-top: 22px;
+  background: #111827;
+  color: white;
+  border: none;
+  padding: 14px 22px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+#next-button:hover,
+#restart-button:hover {
+  background: #2563eb;
+  transform: scale(1.03);
+}
+
+.hidden {
+  display: none;
+}
+
+.highlight {
+  color: #ffffff;
+  background: #111827;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+#review-container {
+  margin-top: 20px;
+  text-align: left;
+}
+
+#review-container p {
+  margin: 5px 0;
+}
